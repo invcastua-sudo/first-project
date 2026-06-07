@@ -1,3 +1,6 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class Ball {
     double x;
     double y;
@@ -13,6 +16,11 @@ public class Ball {
         this.speedY = speedY;
     }
 
+    public void draw(Graphics g) {
+        g.setColor(Color.WHITE);
+        g.fillOval((int)x, (int)y, (int)diameter, (int)diameter);
+    }
+
     void move() {
 
     }
@@ -25,7 +33,4 @@ public class Ball {
 
     }
 
-    void draw() {
-
-    }
 }

@@ -1,3 +1,6 @@
+import java.awt.Color;
+import java.awt.Graphics;
+
 public class Paddle {
     int score;
     double x;
@@ -15,6 +18,11 @@ public class Paddle {
         this.speed = speed;
     }
 
+    public void draw(Graphics g) {
+        g.setColor(Color.WHITE);
+        g.fillRect((int)x, (int)y, (int)width, (int)height);
+    }
+
     void moveUp() {
 
     }
@@ -23,8 +31,6 @@ public class Paddle {
 
     }
 
-    void draw() {
 
-    }
 
 }
